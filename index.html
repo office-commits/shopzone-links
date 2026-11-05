@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopZone – Днешни предложения</title>
+<meta name="description" content="Днешни предложения от ShopZone.bg – директни линкове към продуктите.">
+<style>
+  :root { --bg:#f6f6f4; --fg:#1a1a1a; --card:#fff; --muted:#666; --accent:#111; --sale:#c0392b; --line:#e4e4e0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121212; --fg:#f2f2f2; --card:#1e1e1e; --muted:#a0a0a0; --accent:#f2f2f2; --sale:#ff6b5b; --line:#2c2c2c; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.4; }
+  main { max-width:560px; margin:0 auto; padding:24px 16px 40px; }
+  header { text-align:center; margin-bottom:20px; }
+  header h1 { margin:0 0 4px; font-size:1.5rem; }
+  header p { margin:0; color:var(--muted); font-size:.95rem; }
+  .card { display:flex; gap:14px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px; margin-bottom:12px; text-decoration:none; color:inherit; }
+  .card img { width:112px; height:112px; object-fit:cover; border-radius:10px; flex:none; background:var(--line); }
+  .info { display:flex; flex-direction:column; justify-content:space-between; min-width:0; }
+  h2 { margin:0; font-size:1rem; font-weight:600; }
+  .price { margin:6px 0; }
+  .price s { color:var(--muted); }
+  .pct { color:var(--sale); font-weight:600; }
+  .btn { align-self:flex-start; background:var(--accent); color:var(--bg); padding:8px 14px; border-radius:999px; font-size:.9rem; font-weight:600; }
+  footer { text-align:center; margin-top:24px; font-size:.9rem; color:var(--muted); }
+  footer a { color:var(--fg); }
+  .empty { text-align:center; color:var(--muted); padding:40px 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Днешни предложения</h1>
+    <p>Натисни продукта, за да го поръчаш</p>
+  </header>
+  
+    <a class="card" href="https://shopzone.bg/product/geographical-norway-amiglobe-puffer-jacket-khaki">
+      <img src="https://shopzone.bg/cdn/img/products/216869/geographical-norway-amiglobe-puffer-jacket-khaki-6ad244705b772.jpeg" alt="Мъжко Пухено Яке в Каки" loading="lazy">
+      <div class="info">
+        <h2>Мъжко Пухено Яке в Каки</h2>
+        <p class="price"><b>108,00 €</b></p>
+        <span class="btn">Към продукта →</span>
+      </div>
+    </a>
+  <footer>
+    <p><a href="https://shopzone.bg">shopzone.bg</a> · Поръчка по телефона: <a href="tel:+359886616036">+359 886 616 036</a></p>
+  </footer>
+</main>
+</body>
+</html>
